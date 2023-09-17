@@ -26,53 +26,93 @@
   </head>
   <body>
     <main>
-      <!-- Navigation -->
-    <header id="home">
-      <nav class="navbar navbar-expand-md bg-dark">
-        <div class="container">
-          <a
-            class="navbar-brand text-white"
-            id="home"
-            href="#home"
-            style="font-style: italic; font-size: 30px"
-            >Contact Us</a
-          >
-          <button
-            class="navbar-toggler collapsed bg-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto gap-3">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-white"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="men.html">Men</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="women.html">Women</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="about.html">About Us</a>
-              </li>
-            </ul>
+      <!-- Navigation Section -->
+      <header id="home">
+        <nav class="navbar navbar-expand-md bg-dark">
+          <div class="container">
+            <a
+              class="navbar-brand text-white"
+              id="home"
+              href="#home"
+              style="font-style: italic; font-size: 30px"
+              >Contact Us</a
+            >
+            <button
+              class="navbar-toggler collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto gap-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="men.html">Men</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="women.html">Women</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="about.html">About Us</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
-    <!-- End of Navigation -->
+        </nav>
+      </header>
+      <!-- End of Navigation -->
+
+      <!-- Form Section -->
+      <div class="container">
+        <br />
+        <form action="process_form.php" method="post">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="ex. Juan Dela Cruz"
+            required
+          /><br /><br />
+
+          <label for="email">Contact Number</label>
+          <input type="email" id="number" name="number" required /><br /><br />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ex. name@domain.com"
+            required
+          /><br /><br />
+
+          <label for="message">Message</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Enter your message here..."
+            required
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <!-- End of Form Section -->
     </main>
     <!-- Script Section -->
     <script
