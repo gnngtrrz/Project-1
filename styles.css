@@ -1,0 +1,51 @@
+#sport {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  padding: 40px;
+}
+
+/* Center the form */
+.container {
+  width: 50%; /* Adjust the width as needed */
+  margin: 0 auto; /* This centers the container horizontally */
+}
+
+/* Style for form elements (you can customize this as needed) */
+form {
+  padding: 60px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
